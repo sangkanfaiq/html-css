@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tickitz sign up" />
+    <meta name="author" content="Sangkan Faiq" />
+    <meta
+      name="keywords"
+      content="sign up, first name, last name, email, phone number, tickitz"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Tickitz - Sign in</title>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="logo">
+        <img src="../../assets/signup/bg-2.png" alt="tickitz" />
+        <h1>wait, watch, wow!</h1>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="right__box">
+        <img src="../../assets/tickitz-logo.png" alt="" />
+        <h4>Sign In</h4>
+        <h3>
+          Sign in with your data that you entered during your registration
+        </h3>
+        <form>
+          <label for="">Email</label><br />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          /><br />
+          <label for="">Password</label><br />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="id_password"
+            name="password"
+          /><i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -40px; cursor: pointer; color: #696666"
+          ></i
+          ><br />
+          <button onClick="Login()">Sign In</button><br />
+          <p class="bottom">
+            Forgot your password?
+            <a href="../../helper/forgot-password/index.html">Reset now</a>
+          </p>
+          <p class="bottom">
+            Dont have an account? <a href="../signup/index.html">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+    <script>
+      function Login() {
+        const email = document.getElementById("email").value;
+        const pass = document.getElementById("id_password").value;
+
+        if (email == "sangkanfaiq@gmail.com" && pass == "123qwe") {
+          alert("Selamat datang Sangkan Faiq");
+          window.open("../../pages/home-page/index.html")
+        } else {
+          alert("Email atau password anda salah!");
+        }
+      }
+    </script>
+  </body>
+</html>

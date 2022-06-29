@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Ticketz movies booking app">
+    <meta name="keywords" content="tickets, movies, now playing, upcoming, lion king, spiderman, john wick 3, black widow, tenet, the witches, moviegoers, ebu id, cineone 21, hiflix, instagram, facebook, twitter, youtube, ticketz.id, tickitz cinema id, film">
+    <meta name="author" content="Sangkan Faiq">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tickitz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/mobile.css">
+  </head>
+  <body id="home">
+    <!--navbar-->
+    
+    <!--end navbar-->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav_logo">
+          <img src="assets/tickitz-logo.png" alt="tickitz">
+        </div>
+        <div class="nav_links left">
+          <div class="nav-item left"><a href="#home">Home</a></div>
+          <div class="nav-item left"><a href="#">List Movies</a></div>
+          <div class="nav-item right">
+            <a href="pages/signup/index.html"><button>Sign Up</button></a>
+          </div>
+        </div>
+        <div class="nav_links right">
+          <a href="pages/signup/index.html"><button>Sign Up</button></a>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <!-- main page-->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="title">
+              <h2>Nearest Cinema. Newest Movie.</h2>
+              <h1>Find out now!</h1>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="imgBox">
+              <div class="cards">
+                <img src="assets/homepage/hp1.png" alt="spiderman" />
+              </div>
+              <div class="cards">
+                <img src="assets/homepage/hp3.png" alt="lion king" />
+              </div>
+              <div class="cards">
+                <img src="assets/homepage/hp2.png" alt="avenger" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main page-->
+
+    <!-- content page-->
+    <section class="content-page">
+      <div class="container">
+        <div class="content-title">
+          <h2>Now Showing</h2>
+          <a href="#">View All</a>
+        </div>
+        <div class="content-showing swiper mySwiper">
+          <div class="cards_box swiper-wrapper">
+            <div class="cards_showing swiper-slide">
+              <img src="assets/movies/m3.1.png" alt="spiderman" />
+            </div>
+            <div class="cards_showing swiper-slide">
+               <img src="assets/movies/m2.png" alt="lion king" />
+            </div>
+            <div class="cards_showing swiper-slide">
+              <img src="assets/movies/m1.png" alt="john wick 3" />
+            </div>
+            <div class="cards_showing swiper-slide">
+              <img src="assets/movies/m3.1.png" alt="spiderman" />
+            </div>
+            <div class="cards_showing swiper-slide">
+              <img src="assets/movies/m2.png" alt="lion king" />
+            </div>
+            <div class="cards_showing swiper-slide">
+              <img src="assets/movies/m2.png" alt="lion king" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- endcontent page-->
+
+    <!-- upcoming movies-->
+    <section class="upcoming__movies">
+      <div class="container">
+        <div class="upcoming__movies-title">
+          <h2>Upcoming Movies</h2>
+          <a href="#home">View All</a>
+        </div>
+
+        <div class="swiper mySwiper2">
+          <div class="upcoming__movies-month swiper-wrapper">
+            <div class="month active swiper-slide">September</div>
+            <div class="month swiper-slide">October</div>
+            <div class="month swiper-slide">November</div>
+            <div class="month swiper-slide">December</div>
+            <div class="month swiper-slide">January</div>
+            <div class="month swiper-slide">February</div>
+            <div class="month swiper-slide">March</div>
+            <div class="month swiper-slide">April</div>
+            <div class="month swiper-slide">May</div>
+            <div class="month swiper-slide">June</div>
+            <div class="month swiper-slide">July</div>
+            <div class="month swiper-slide">August</div>
+          </div>
+        </div>
+        
+        <div class="swiper mySwiper myswiper_2">
+          <div class="upcoming__movies-card swiper-wrapper">
+            <div class="upcoming__movies-card-items swiper-slide">
+              <img src="assets/movies/m5.png" alt="black widow">
+              <div class="movie_title">Black Widow</div>
+              <div class="movie_genre">Action, Adventure, Scifi</div>
+              <button><a href="pages/movie-details/index.html">Details</a></button>
+            </div>
+            <div class="upcoming__movies-card-items swiper-slide">
+              <img src="assets/movies/m6.png" alt="the witches">
+              <div class="movie_title">The Witches</div>
+              <div class="movie_genre">Adventure, Comedy, Family</div>
+              <button><a href="pages/movie-details/index.html">Details</a></button>
+            </div>
+            <div class="upcoming__movies-card-items swiper-slide">
+              <img src="assets/movies/m4.png" alt="tenet">
+              <div class="movie_title">Tenet</div>
+              <div class="movie_genre">Action, Scifi</div>
+              <button><a href="pages/movie-details/index.html">Details</a></button>
+            </div>
+            <div class="upcoming__movies-card-items swiper-slide">
+              <img src="assets/movies/m6.png" alt="the witches">
+              <div class="movie_title">The Witches</div>
+              <div class="movie_genre">Adventure, Comedy, Family</div>
+              <button><a href="pages/movie-details/index.html">Details</a></button>
+            </div>
+            <div class="upcoming__movies-card-items swiper-slide">
+              <img src="assets/movies/m5.png" alt="black widow">
+              <div class="movie_title">Black Widow</div>
+              <div class="movie_genre">Action, Adventure, Scifi</div>
+              <button><a href="pages/movie-details/index.html">Details</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end upcoming movies-->
+
+    <!-- content subscribe-->
+    <section class="content__subscribe">
+      <div class="container">
+        <div class="content__subscribe-box">
+          <div class="content__subscribe-title">
+            <h2>By the vanguard of the<br><span>Moviegoers</span></h2>
+          </div>
+          <div class="content__subscribe-subscribe">
+            <input type="text" placeholder="Type your email">
+            <button>Join now</button>
+          </div>
+          <div class="content__subscribe-details">
+            <p>By joining you as a tickitz member,<br>we will always send you the latest update via email</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end content subscribe-->
+
+    <!-- footer -->
+    <footer class="footer container">
+      <div class="row">
+        <div class="col-md-4 footer_logo">
+          <img src="assets/tickitz-logo.png" alt="">
+          <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+        </div>
+        <div class="col-md-2 explore">
+          <h3>Explore</h3>
+          <p>Home</p>
+          <p>List Movies</p>
+        </div>
+        <div class="col-md-3">
+          <h3>Our Sponsor</h3>
+          <div class="sponsor"><img src="assets/sponsor/ebu-id.png" alt=""></div>
+          <div class="sponsor"><img src="assets/sponsor/co21.png" alt=""></div>
+          <div class="sponsor"><img src="assets/sponsor/hiflix.png" alt=""></div>
+        </div>
+        <div class="col-md-3">
+          <h3>Follow us</h3>
+          <div class="social d-flex">
+            <img src="assets/social/fb.png" alt="">
+            <p>Tickitz Cinema Id</p>
+          </div>
+          <div class="social d-flex">
+            <img src="assets/social/ig.png" alt="">
+            <p>Tickitz Cinema Id</p>
+          </div>
+          <div class="social d-flex">
+            <img src="assets/social/twt.png" alt="">
+            <p>Tickitz Cinema Id</p>
+          </div>
+          <div class="social d-flex">
+            <img src="assets/social/yt.png" alt="">
+            <p>Tickitz Cinema Id</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2020 Tickitz. All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        loop: true,
+        breakpoints: {
+          991: {
+            slidesPerView: 5,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          468: {
+            slidesPerView: 1,
+          }
+        }
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        loop: true,
+        breakpoints: {
+          991: {
+            slidesPerView: 7,
+          },
+          768: {
+            slidesPerView: 3,
+          }
+        }
+      });
+    </script>
+    <script>
+      const hamburger = document.querySelector(".hamburger")
+      const navLogo = document.querySelector(".nav_links")
+      hamburger.addEventListener("click", ()=> {
+        hamburger.classList.toggle("active")
+        navLogo.classList.toggle("active")
+      })
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

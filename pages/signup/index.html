@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tickitz sign up" />
+    <meta name="author" content="Sangkan Faiq" />
+    <meta
+      name="keywords"
+      content="sign up, first name, last name, email, phone number, tickitz"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Tickitz - Sign up</title>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="logo">
+        <a href="../../index.html"
+          ><img src="../../assets/signup/bg-2.png" alt="tickitz"
+        /></a>
+        <h1>wait, watch, wow!</h1>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="right__box">
+        <img src="../../assets/tickitz-logo.png" alt="" />
+        <h4>Sign Up</h4>
+        <h3>Fill your additional details</h3>
+        <form>
+          <label for="">First Name</label><br />
+          <input type="text" placeholder="Enter your first name" /><br />
+          <label for="">Last Name</label><br />
+          <input type="text" placeholder="Enter your last name" /><br />
+          <label for="">Phone number</label><br />
+          <input type="text" placeholder="Enter your phone number" /><br />
+          <label for="">Email</label><br />
+          <input type="text" placeholder="Enter your email" /><br />
+          <label for="">Password</label><br />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="id_password"
+          /><i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -40px; cursor: pointer; color: #696666"
+          ></i
+          ><br />
+          <button>Sign Up</button><br />
+          <p class="bottom">
+            Already have account? <a href="../signin/index.html">Sign in</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+          password.setAttribute("type", type);
+          this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+  </body>
+</html>

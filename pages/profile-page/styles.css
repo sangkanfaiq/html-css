@@ -1,0 +1,237 @@
+:root {
+  --primary: #5f2eea;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  background: #e5e5e5;
+}
+
+/* navbar */
+.navbar {
+  background: #fff;
+  padding: 20px 0;
+}
+.left {
+  align-items: center;
+}
+.right {
+  justify-content: flex-end;
+}
+.nav_logo {
+  display: flex;
+}
+.nav_logo a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}
+.nav_logo img {
+  margin-right: 20px;
+}
+.nav_logo .nav-item {
+  margin: 0 35px;
+}
+.nav_logo button {
+  outline: none;
+  border: none;
+  background: var(--primary);
+  border-radius: 5px;
+  padding: 12px 40px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #f7f7fc;
+}
+.nav_logo .search_icon {
+  align-self: center;
+  margin-right: 60px;
+}
+.nav_logo .search_icon img {
+  width: 20px;
+  height: 20px;
+}
+.nav_logo .profile_icon {
+  align-self: center;
+}
+.nav_logo .profile_icon img {
+  width: 55px;
+  height: 55px;
+}
+
+/* profile info */
+.profile_info {
+  height: 575px;
+}
+.profile_info_box {
+  padding: 60px 70px;
+  background: #ffffff;
+  
+  box-shadow: 0px 15px 20px rgba(145, 140, 140, 0.3);
+  border-radius: 25px;
+}
+.profile_info_box h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #363444;
+}
+.img_center {
+  display: flex;
+  background: purple;
+  justify-content: center;
+}
+.centered h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #14142b;
+}
+.centered h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  color: #343341;
+}
+.centered button {
+  margin-top: 50px;
+  width: 70%;
+  padding: 15px;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.profile_detail-header {
+  background: #ffffff;
+  padding: 10px 56px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(145, 140, 140, 0.3);
+}
+.profile_detail-header h2 {
+  padding-right: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  color: #14142b;
+}
+.profile_detail-header h2:nth-child(2) {
+  color: #838697;
+}
+.profile_detail-header h2:nth-child(1):after {
+  content: "";
+  display: block;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid var(--primary);
+}
+.detail_info {
+  margin-top: 50px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0px 15px 20px rgba(145, 140, 140, 0.3);
+  padding: 0 56px;
+  padding-top: 40px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+.detail_info:nth-child(4) {
+  height: 260px;
+  margin-bottom: 50px;
+}
+.detail_info form input::placeholder {
+  font-size: 14px;
+}
+.button {
+  width: 360px;
+  padding: 13px;
+  background: var(--primary);
+  outline: none;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  border: none;
+  box-shadow: 0px 15px 20px rgba(145, 140, 140, 0.3);
+}
+
+/* footer */
+footer {
+  position: relative;
+  height: 380px;
+  margin-top: 100px;
+  background: #fff;
+}
+.flex-1 {
+  padding-top: 110px;
+  display: flex;
+}
+.footer__wrap {
+  justify-content: space-around;
+}
+.footer__wrap .light p {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.75px;
+  color: #5c5f79;
+}
+.footer__wrap li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.footer__wrap p {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+.footer__social img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social li {
+  display: flex;
+}
+.footer__copyright {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__copyright p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4e4b66;
+}

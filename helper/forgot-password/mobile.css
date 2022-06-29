@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+  /* .right__box {
+      margin-top: 80px;
+    } */
+  .right__box img {
+    display: block;
+    margin-bottom: 45px;
+  }
+  .right__box h4 {
+    font-size: 26px;
+  }
+  .right__box h4:nth-child(2) {
+    display: none;
+  }
+  .right__box h4:nth-child(3) {
+    display: block;
+  }
+  .right__box h3 {
+    font-size: 16px;
+  }
+  .right__box p:nth-child(2) {
+    font-size: 16px;
+  }
+  .right__box form input,
+  .right__box form button {
+    width: 100%;
+  }
+  .right__box .bottom {
+    margin-bottom: 15px;
+  }
+}

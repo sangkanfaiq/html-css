@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --primary: #5f2eea;
+}
+.split {
+  position: absolute;
+  height: 130vh;
+  width: 100%;
+}
+.left {
+  width: 55%;
+  left: 0;
+  background: url(../../assets/signup/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left .logo {
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 21, 107, 0.8);
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+.left .logo img {
+  padding: 10px 20px;
+}
+.left .logo h1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 0.003em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.right {
+  width: 45%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+}
+.right__box {
+  width: 100%;
+}
+.right__box img {
+  display: none;
+}
+.right__box h4 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.003em;
+  color: #121212;
+}
+.right__box h3 {
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgba(0,0,0,0.7);
+  margin-bottom: 40px;
+}
+.right__box p:nth-child(2) {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.007em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.right__box form input {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0px 20px;
+  height: 45px;
+  outline: none;
+  font-size: 15px;
+}
+.right__box form input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+.right__box form label {
+  font-weight: 600;
+}
+.right__box form label,
+.right__box form input {
+  margin: 20px 0;
+}
+.right__box form button {
+  margin-top: 30px;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: var(--primary);
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.75px;
+}
+.right__box .bottom {
+  margin-top: 25px;
+  text-align: center;
+}
+.right__box .bottom a {
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+}

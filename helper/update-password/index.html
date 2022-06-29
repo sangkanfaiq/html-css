@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tickitz sign up" />
+    <meta name="author" content="Sangkan Faiq" />
+    <meta
+      name="keywords"
+      content="sign up, first name, last name, email, phone number, tickitz"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <title>Tickitz - Update Password</title>
+  </head>
+  <body>
+    <div class="split left">
+      <div class="logo">
+        <a href="../../index.html"
+          ><img src="../../assets/signup/bg-2.png" alt="tickitz"
+        /></a>
+        <h1>Lets reset your password</h1>
+        <p>
+          To be able to use your account again, please complete the following
+          steps
+        </p>
+        <div class="rounded_box">
+          <div class="rounded">1</div>
+          <p>Fill your complete email</p>
+        </div>
+        <img src="../../assets/icons/line.png" alt="" />
+        <div class="rounded_box">
+          <div class="rounded">2</div>
+          <p>Check your email</p>
+        </div>
+        <img src="../../assets/icons/line.png" alt="" />
+        <div class="rounded_box">
+          <div class="rounded active">3</div>
+          <p class="active">Enter your new password</p>
+        </div>
+        <img src="../../assets/icons/line.png" alt="" />
+        <div class="rounded_box">
+          <div class="rounded">4</div>
+          <p>Done</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="right__box">
+        <img src="../../assets/tickitz-logo.png" alt="" />
+        <h4>Fill your complete password</h4>
+        <h4>Set Password</h4>
+        <h3>Set your new password</h3>
+        <form>
+          <label for="">Password</label><br />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            id="id_password"
+          /><i
+            class="far fa-eye"
+            id="togglePassword"
+            style="margin-left: -40px; cursor: pointer; color: #696666"
+          ></i>
+          <br />
+          <label for="">Confirm Password</label><br />
+          <input
+            type="password"
+            placeholder="Enter your confirm password"
+            id="id_password2"
+          /><i
+            class="far fa-eye"
+            id="togglePassword2"
+            style="margin-left: -40px; cursor: pointer; color: #696666"
+          ></i>
+          <br />
+          <a href="#"><button>Submit</button></a><br />
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        this.classList.toggle("fa-eye-slash");
+      });
+      const togglePassword2 = document.querySelector("#togglePassword2");
+      const password2 = document.querySelector("#id_password2");
+
+      togglePassword2.addEventListener("click", function (e) {
+        const type =
+          password2.getAttribute("type") === "password" ? "text" : "password";
+        password2.setAttribute("type", type);
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+  </body>
+</html>

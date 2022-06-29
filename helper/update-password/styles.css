@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+:root {
+  --primary: #5f2eea;
+}
+.split {
+  position: absolute;
+  width: 100%;
+}
+.left {
+  width: 55%;
+  height: 100vh;
+  left: 0;
+  background: url(../../assets/signup/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.left .logo {
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 21, 107, 0.8);
+  display: flex;
+  padding: 70px 80px;
+  flex-direction: column;
+}
+.left .logo img {
+  width: 275px;
+  height: 105px;
+}
+.left .logo h1 {
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 60px;
+  letter-spacing: 0.003em;
+  color: #ffffff;
+}
+.left .logo p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.007em;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+.left .logo .rounded_box {
+  display: flex;
+  margin-top: 30px;
+}
+.left .logo img:nth-child(5) {
+  position: absolute;
+  width: 2px;
+  margin-top: 310px;
+  margin-left: 24px;
+  height: 30px;
+}
+.left .logo img:nth-child(7) {
+  position: absolute;
+  width: 2px;
+  margin-top: 390px;
+  margin-left: 24px;
+  height: 30px;
+}
+.left .logo img:nth-child(9) {
+  position: absolute;
+  width: 2px;
+  margin-top: 470px;
+  margin-left: 24px;
+  height: 30px;
+}
+
+.left .logo .rounded_box .rounded.active {
+  background: #fff;
+  color: rgba(37, 4, 58, 0.87);
+}
+.left .logo .rounded_box .rounded {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.005em;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.left .logo .rounded_box p.active {
+  color: #fff;
+}
+.left .logo .rounded_box p {
+  align-self: center;
+  margin-left: 45px;
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.right {
+  width: 45%;
+  height: 100vh;
+  right: 0;
+  align-items: center;
+}
+.right__box {
+  width: 100%;
+  padding: 50px;
+}
+.right__box img {
+  display: none;
+}
+.right__box h4 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 58px;
+  letter-spacing: 0.003em;
+  color: #2e2e2e;
+}
+.right__box h4:nth-child(3) {
+  display: none;
+}
+.right__box h3 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+.right__box p:nth-child(2) {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.007em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.right__box form input {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  width: 90%;
+  padding: 0px 20px;
+  height: 45px;
+  outline: none;
+  font-size: 15px;
+}
+.right__box form input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+}
+.right__box form label {
+  font-weight: 600;
+}
+.right__box form label,
+.right__box form input {
+  margin: 20px 0;
+}
+.right__box form button {
+  margin-top: 50px;
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: var(--primary);
+  font-family: "Mulish";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.75px;
+  transition: 0.3s;
+}
+.right__box form button:hover {
+  background: #4e27b9;
+}
